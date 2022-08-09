@@ -1,0 +1,109 @@
+:root {
+    --black: #401E08;
+    --gray: #6B3C22;
+    --yellow: #8FBC8F;
+    --white: #C97035;
+    --red: #2F847C;
+    --darkRed: #054B4A;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--black);
+    font-family: "Roboto Mono"; 
+}
+#border {
+    margin: 0px;
+    padding: 5vh 10vw;
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.title {
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    font-size: 12px;
+}
+.icon {
+    position: absolute;
+    top: 0.9em;
+    width: 3.2em;
+    fill: var(--yellow);
+}
+#monkeysee {
+    position: absolute;
+    left: 5em;
+    color: var(--gray);
+    font-size: 0.8em;
+    margin: 0px;
+    width: 10vw
+}
+#monkeytype {
+    position: absolute;
+    font-size: 2.8em;
+    top: -0.08em;
+    left: 1.4em;
+    color: var(--white);
+    margin: 0px;
+}
+#count {
+    color: var(--yellow);
+    font-size: 1.5em;
+}
+#textbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: relative;
+}
+
+letter {
+    color: var(--gray);
+    font-size: 1.5em;
+}
+#textbox > div {
+    display: inline;
+    margin: 0px 5px;
+}
+
+.correct {
+    color: var(--white);
+}
+.incorrect {
+    color: var(--red);
+}
+.extra {
+    color: var(--darkRed);
+}
+
+#timer {
+    color: var(--white);
+    font-size: 4em;
+}
+
+.wpm {
+    color: var(--yellow);
+    font-size: 3em;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+#caret {
+    position: absolute;
+    top: 3px;
+    background-color: var(--yellow);
+    width: 2px;
+    height: 1.65em;
+    transition: transform 0.2s;
+}
